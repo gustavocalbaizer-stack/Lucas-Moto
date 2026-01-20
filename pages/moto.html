@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhes da Moto | Lucas Moto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    .moto-detalhe-section-spacing {
+      padding-top: 8rem;
+    }
+  </style>
+    <script src="/assets/js/motorcyclesData.js"></script>
+    <script src="/assets/js/moto-detalhe.js" defer></script>
+    <script src="/assets/js/script.js"></script>
+</head>
+
+<body>
+    <section class="moto-detalhe-section">
+     <div class="container"><div id="moto-detalhe"></div></div>
+    </section>
+
+
+
+<!-- Header/Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/f0b23d51-7c14-4cff-bc35-9e48b5884c8f.png" alt="Lucas Moto">
+                    </a>
+                </div>
+                
+                <nav class="desktop-nav">
+                    <a href="/pages/index.html">Início</a>
+                    <a href="/pages/modelos.html">Modelos</a>
+                    <a href="/pages/index.html#como-funciona">Como Funciona</a>
+                    <a href="/pages/index.html#diferenciais">Diferenciais</a>
+                    <button onclick="openWhatsApp()" class="btn-primary">
+                        <i class="fa fa-whatsapp"></i>
+                        WhatsApp
+                    </button>
+                </nav>
+
+                <button onclick="openWhatsApp()" class="mobile-whatsapp">
+                    <i class="fa fa-whatsapp"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+</header>
+
+    <section class="moto-detalhe-section-spacing">
+  <div class="container">
+    <div id="moto-detalhe-container"></div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-arrow left" onclick="prevImage(event)">‹</button>
+
+  <img id="lightbox-img">
+
+  <button class="lightbox-arrow right" onclick="nextImage(event)">›</button>
+</div>
+
+
+</body>
+</html>
